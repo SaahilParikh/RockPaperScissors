@@ -1,0 +1,103 @@
+$gradient-top: rgba(98, 0, 255, 0.45);
+$gradient-bottom: rgba(234, 0, 255, 0.8);
+
+body {
+    background-image: url("../res/background.jpg"); 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    cursor: url('../res/circle.svg'), auto;
+    font-family: "Yanone Kaffeesatz";
+}
+
+#lower-div {
+    background: linear-gradient($gradient-top, $gradient-bottom);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+   
+    button {
+        margin-top: 50px;
+        font-size: 5em;
+        color: rgb(76, 34, 175);
+        cursor: url('../res/cursor.cur'), auto;
+        border-radius: 20px;
+        border: none;
+        color: rgb(94, 253, 161);
+        opacity: 0.4;
+        background: rgb(62, 12, 82);
+        box-shadow: 0 9px #999;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 30px;
+        &:hover {
+            background-color: rgba(145, 141, 150, 0.5);
+        }
+        &:active {
+            background-color: rgb(226, 238, 117);
+            box-shadow: 0 5px #666;
+            transform: translateY(5px);
+        }
+    }
+    #scores{
+        margin-top: 50px;
+        font-family: "Yanone Kaffeesatz";
+        display: flex;
+        justify-content: space-evenly;
+        color: rgba(76, 20, 108, 0.33);
+        p{
+            font-size: 10em;
+        } 
+    }
+    #comment{
+        margin-top: 50px;
+        font-family: "Yanone Kaffeesatz";
+        color: rgba(52, 51, 56, 0.603);
+            font-size: 4em;
+    
+    }
+}
+
+#upper-div {
+    background: $gradient-top;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    button {
+        cursor: url('../res/cursor.cur'), auto;
+        height: 15em;
+        width: 15em;
+        border-radius: 20px;
+        border: none;
+        color: rgb(94, 253, 161);
+        opacity: 0.4;
+        background: rgb(127, 92, 221);
+        box-shadow: 0 9px #999;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            background-color: rgb(33, 6, 66);
+            height: 15.5em;
+            width: 15.5em;
+        }
+        &:active {
+            background-color: rgb(226, 238, 117);
+            box-shadow: 0 5px #666;
+            transform: translateY(5px);
+        }
+    }
+}
+
+
+
+#full-div {
+    height: 100vh;
+    div {
+        height: 50vh;
+    }
+}
