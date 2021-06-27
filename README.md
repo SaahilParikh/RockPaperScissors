@@ -1,1 +1,2 @@
-# Rock Paper Scissors Website by Saahil Parikh
+# Rock Paper Scissors 
+
